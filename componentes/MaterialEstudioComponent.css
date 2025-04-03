@@ -1,0 +1,42 @@
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.h2Temario{
+    color: white;
+}
+
+.libro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+.libro p{
+    color:black
+}
+
+.libro img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.botonLibro {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.botonLibro:hover {
+    background-color: #0056b3;
+}

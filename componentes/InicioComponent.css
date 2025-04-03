@@ -1,0 +1,174 @@
+*{
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.contenidoPrincipal {
+    background-color: black;
+}
+
+.logo-imagenPrincipal {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    max-height: 50vh; /* Limita la altura máxima al 50% de la pantalla */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    object-position: center; /* Centra la imagen en el contenedor */
+    display: block;
+}
+
+.linea-azul {
+    width: 100%;
+    height: 2px;
+    background-color: #063971; /* Azul de Marvel */
+}
+
+.texto-izq, .texto-derecha {
+    width: 20%; /* Ajusta el ancho de los textos */
+    color: white;
+    background-color: #063971; /* Fondo rojo */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height:170px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+#contenedor {
+    display: flex; /* Usa flexbox para alinear los elementos en una fila */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 150px; /* Añade un pequeño espacio entre los elementos */
+
+}
+
+#contenedor > div {
+    display: flex; /* Asegura que los elementos internos se alineen correctamente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animación de aparición de los textos */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .texto-izq, .texto-derecha {
+        width: 100%; /* Los textos ocupan todo el ancho en pantallas pequeñas */
+        margin: 0; /* Elimina los márgenes */
+    }
+
+    #contenedor {
+        flex-direction: column; /* Los elementos se apilan verticalmente en pantallas pequeñas */
+        align-items: center;
+    }
+}
+
+h4{
+    text-align: center;
+    animation: sirenaPolicial 1s infinite alternate;
+}
+@keyframes sirenaPolicial {
+    0% { color: #063971; text-shadow: 0 0 10px #063971; }
+    50% { color: #0a57d4; text-shadow: 0 0 20px #0a57d4; }
+    100% { color: #063971; text-shadow: 0 0 10px #063971; }
+}
+
+.formacionTipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+    text-align: center; 
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el contenido de cada caja */
+    width: 250px; /* Ajusta el ancho de cada caja */
+    padding: 20px;
+    text-align: justify; /* Justifica el texto */
+
+}
+
+.caja img {
+    max-width: 100px; /* Ajusta el tamaño de las imágenes */
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+}
+
+.caja p {
+    text-align: justify;
+    width: 100%;
+    hyphens: auto; /* Permite la separación automática de palabras */
+    word-spacing: -1px; /* Reduce espacios extra grandes */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+.formulario {
+    background-image: url('../imagenes/policiaNacional.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el ancho y alto */
+    background-position: center top; /* Centra la imagen desde la parte superior */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ocupar todo el ancho disponible sin afectar el tamaño de la página */
+    min-height: 500px; /* Ajusta la altura mínima para que la imagen se vea bien */
+    display: flex; /* Usamos flexbox para dividir el espacio entre izquierda y derecha */
+    justify-content: space-between; /* Esto distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+    position: relative; /* Asegura que los elementos internos se posicionen correctamente */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del div */
+    color: white; /* Hace el texto blanco para que contraste con el fondo */
+    
+}
+
+.parte-izq {
+    width: 50%; /* Toma la mitad del espacio disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+   
+}
+
+.parte-izq h3, .parte-izq p{
+    font-weight: bold; /* Pone el texto en negrita */
+    margin-bottom: 10px; /* Da un espacio entre los elementos */
+    color: black;
+}
+
+.parte-izq h3{
+    text-decoration: underline;
+}
+
+.boton-info{
+    background-color: #063971; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Letras en negrita */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; 
+}
+.boton-info:hover {
+    background-color: #5690cf; /* Cambia el fondo a un azul más oscuro cuando el botón es hover */
+}
+
+
+
+
