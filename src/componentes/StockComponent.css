@@ -1,0 +1,99 @@
+/* Fondo de la página */
+body {
+    background-color: black; /* Fondo de la página negro */
+    color: white; /* Texto blanco para el cuerpo de la página */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sección de stock */
+.stock-section {
+    padding: 30px;
+    background-color: black; /* Fondo oscuro para la sección de stock */
+    min-height: 100vh;
+    margin-bottom: 30px; /* Añadido para dar más espacio en la parte inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título de la sección */
+.stock-section h2 {
+    color: white; /* Título en blanco */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Tabla de productos */
+.tabla-stock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    /* flex-grow: 1; Asegura que las cajas se distribuyan en todo el espacio */
+}
+
+/* Estilo de cada producto */
+.producto-stock {
+    background-color: white; /* Fondo blanco para los productos */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos todo el contenido horizontalmente */
+    justify-content: center; /* Centramos todo el contenido verticalmente */
+    gap: 10px;
+    height: auto; /* Fijamos una altura mínima para mantener la uniformidad */
+}
+
+/* Título del producto */
+.producto-stock p {
+    margin: 0;
+    font-size: 1rem;
+    color: black; /* Nombre del producto en negro */
+    text-align: center; /* Aseguramos que el texto esté centrado */
+}
+
+/* Estilo del input */
+.producto-stock input {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 10px; /* Añadido para separar un poco el input del texto */
+}
+
+/* Estilo del botón */
+.producto-stock button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Aseguramos que el botón ocupe el 100% del contenedor */
+    margin-top: 10px; /* Añadido para separar el botón del input */
+}
+
+/* Centramos los botones */
+.producto-stock button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo cuando el botón se pasa por encima */
+.producto-stock button:hover {
+    background-color: #0056b3;
+}
+
+/* Título del producto en negrita */
+.producto-stock p strong {
+    margin: 0;
+    font-size: 1rem;
+    color: black !important; /* Forzamos el color negro con !important */
+}

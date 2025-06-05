@@ -1,0 +1,65 @@
+/* Estilo general del body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0;
+  }
+  
+  /* Contenedor principal para la app */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor principal ocupe toda la altura de la ventana */
+  }
+  
+  /* Estilo general del footer */
+  .footer {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: auto; /* Esto empuja el footer hacia el final de la página */
+  }
+  
+  /* Estilo para asegurar que el texto en el footer sea blanco */
+  .footer p, .footer a {
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+  
+  /* Contenedor para los contenidos del footer */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilo para la parte izquierda con derechos de autor */
+  .footer-left {
+    font-size: 14px;
+  }
+  
+  /* Contenedor de los iconos sociales */
+  .footer-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Estilo para los iconos sociales */
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto hover sobre los iconos */
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  

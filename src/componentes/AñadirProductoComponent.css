@@ -1,0 +1,47 @@
+.formularioProducto {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.formularioProducto h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.formularioProducto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioProducto input,
+.formularioProducto textarea,
+.formularioProducto button {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.formularioProducto textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.formularioProducto button {
+    background-color: #0e6ba8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formularioProducto button:hover {
+    background-color: #094a73;
+}

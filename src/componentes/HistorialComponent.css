@@ -1,0 +1,61 @@
+/* Estilo general del título */
+.h2Temario {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #1a237e;
+    font-weight: bold;
+}
+
+/* Contenedor principal que organiza los bloques de compras */
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    justify-items: center;
+}
+
+/* Caja de cada compra */
+.libro {
+    background-color: #f5f5f5;  /* Fondo más suave para las cajas */
+    border: 2px solid #c5cae9;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Estilo de los párrafos de información dentro de .libro */
+.libro p {
+    margin: 0.5rem 0;
+    color: #000;  /* Aseguramos que el texto sea negro para mejor visibilidad */
+    font-size: 1rem;
+}
+
+/* Estilo de los textos en negrita dentro de los párrafos */
+.libro p strong {
+    color: #000 !important;  /* Forzar el color negro con !important */
+}
+
+/* Si el problema persiste, probemos a aplicar el color a todos los elementos de strong */
+.libro strong {
+    color: #000 !important;  /* Asegurarnos de que todos los "strong" dentro de ".libro" sean negros */
+}
+
+
+/* Efecto hover para resaltar la caja cuando se pasa el ratón */
+.libro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);  /* Aumenta la sombra al hacer hover */
+}
+/* Estilos para las imágenes de los productos en el historial */
+.imagenProducto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+

@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header {
+    display: flex;
+    justify-content: center; /* Centra todo el contenido */
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centra la barra de navegación */
+    flex-grow: 1; /* Permite que el nav ocupe el espacio disponible */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro del ul */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px; /* Espaciado entre elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav a:hover {
+    color: #063971;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.usuario-info{
+    color: white;
+}
+.cerrarSesion{
+    background-color:#063971; ;
+}
+
+
+/* Responsive para pantallas medianas (tabletas y pequeños escritorios) */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    nav ul {
+        margin-left: 20px;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+}
+
+/* Responsive para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo-img {
+        width: 90px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+/* Fondo negro general */
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección principal */
+.pruebas-fisicas {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0; /* texto claro sobre fondo oscuro */
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Enlace al PDF */
+.pdf-link {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.pdf-link a {
+    color: #4fc3f7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-link a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    height: 380px;
+    width: 100%;               /* 🔹 Asegura que todas tengan mismo ancho */
+    max-width: 1000px;         /* 🔹 Coincide con el ancho de .pruebas-fisicas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;  /* 🔹 Limita el ancho al 100% del contenedor */
+    box-sizing: border-box;
+}
+
+
+.texto {
+    flex: 1 1 60%;         /* 🔹 Ocupa el 60% del ancho */
+    max-width: 60%;
+    overflow: hidden;
+}
+
+
+
+.texto h5 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    color: #003366;
+}
+
+.texto p {
+    font-size: 1rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+.imagen {
+    flex: 0 0 40%;         /* 🔹 Imagen ocupa el 40% del ancho */
+    max-width: 40%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texto,
+    .imagen {
+        max-width: 100%;
+        flex: none;
+        width: 100%;
+    }
+
+    .imagen {
+        height: auto;
+    }
+}
